@@ -1,0 +1,35 @@
+{
+  "keywordFileContentHash": "25304B1664BF2F5FCB4055F5124D8675",
+  "keywordClasses": [
+    {
+      "name": "pageAction.HomePage",
+      "keywordMethods": [
+        {
+          "name": "launchURL",
+          "parameters": [
+            {
+              "name": "URL",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "navigateToLoginPage",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
