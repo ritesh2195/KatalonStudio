@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "25304B1664BF2F5FCB4055F5124D8675",
+  "keywordFileContentHash": "95968F368348341DB7054F974A6A6BF4",
   "keywordClasses": [
     {
       "name": "pageAction.HomePage",
@@ -25,6 +25,11 @@
         },
         {
           "name": "navigateToLoginPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "navigateToRegisterUserPage",
           "parameters": [],
           "javadoc": ""
         }

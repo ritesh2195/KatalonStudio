@@ -1,0 +1,26 @@
+{
+  "keywordFileContentHash": "B0E72184D6AF20E386938D250C592483",
+  "keywordClasses": [
+    {
+      "name": "pageAction.RegisterPage",
+      "keywordMethods": [
+        {
+          "name": "enterPersonalDetails",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "enterPassword",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickLogin",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

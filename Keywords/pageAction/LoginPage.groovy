@@ -25,10 +25,10 @@ public class LoginPage {
 	@Keyword
 	public void doLogin(String email, String password) {
 
-		WebUI.sendKeys(findTestObject("Object Repository/LoginPage/email"), email)
+		WebUI.sendKeys(findTestObject("Object Repository/LoginPage/input_email"), email)
 
-		WebUI.sendKeys(findTestObject("Object Repository/LoginPage/password"), password)
+		WebUI.sendKeys(findTestObject("Object Repository/LoginPage/input_password"), password)
 
-		WebUI.click(findTestObject("Object Repository/LoginPage/login_button"))
+		WebUI.click(findTestObject("Object Repository/LoginPage/button_login"))
 	}
 }

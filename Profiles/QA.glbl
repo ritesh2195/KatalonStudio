@@ -6,17 +6,17 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://demo.nopcommerce.com/'</initValue>
+      <initValue>'https://naveenautomationlabs.com/opencart/'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'abc@gmail.com'</initValue>
+      <initValue>'xyz@gmail.com'</initValue>
       <name>email</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'nbPRAawFRnE='</initValue>
+      <initValue>'qwerty'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,4 +1,4 @@
-package pageAction
+package utilities
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -17,34 +17,23 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
 import internal.GlobalVariable
 
-public class HomePage {
+public class commonUtility {
 
 	@Keyword
-	public void launchURL(String URL) {
+	public String getTitle() {
 
-		WebUI.openBrowser("")
+		WebDriver driver = DriverFactory.getWebDriver()
 
-		WebUI.maximizeWindow()
-
-		WebUI.navigateToUrl(URL)
+		return driver.getTitle()
 	}
 
 	@Keyword
-	public void navigateToLoginPage() {
+	public void closeBrowser() {
 
-		WebUI.click(findTestObject('Object Repository/HomePage/link_myaccount'))
-
-		WebUI.click(findTestObject("Object Repository/HomePage/link_login"))
-	}
-
-	@Keyword
-	public void navigateToRegisterUserPage() {
-
-		WebUI.click(findTestObject('Object Repository/HomePage/link_myaccount'))
-
-		WebUI.click(findTestObject("Object Repository/HomePage/link_register"))
+		WebUI.closeBrowser()
 	}
 }

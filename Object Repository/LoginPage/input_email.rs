@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_login</name>
+   <name>input_email</name>
    <tag></tag>
-   <elementGuidId>a8c435a1-3d0e-4acb-bd7b-3b4a4105b2b5</elementGuidId>
+   <elementGuidId>040685c6-aff1-42a6-9212-b6394692ea32</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()='Login']</value>
       </entry>
       <entry>
          <key>BASIC</key>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#input-email</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

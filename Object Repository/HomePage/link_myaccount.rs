@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>login_button</name>
+   <name>link_myaccount</name>
    <tag></tag>
-   <elementGuidId>a0fa2c5c-c2e8-4814-9447-57ce380fb781</elementGuidId>
+   <elementGuidId>a66cc860-c8a3-46e9-b121-9ceb2d424abb</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value>.button-1.login-button</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.dropdown a[title='My Account']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

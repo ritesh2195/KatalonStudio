@@ -14,22 +14,46 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import org.openqa.selenium.WebDriver as WebDriver
-import org.junit.Assert;
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.chrome.ChromeDriver
+import com.kms.katalon.core.webui.driver.DriverFactory
 
-CustomKeywords.'pageAction.HomePage.launchURL'(GlobalVariable.url)
+WebUI.openBrowser("")
 
-CustomKeywords.'pageAction.HomePage.navigateToLoginPage'()
+WebUI.maximizeWindow()
 
-CustomKeywords.'pageAction.LoginPage.doLogin'(GlobalVariable.email,GlobalVariable.password)
+WebUI.navigateToUrl("https://mdbootstrap.com/docs/b4/jquery/tables/pagination/")
 
-String title = CustomKeywords.'utilities.commonUtility.getTitle'()
+WebDriver driver = DriverFactory.getWebDriver()
 
-//Assert.assertEquals(windowTitle, title)
+ArrayList<String> companiesName = new ArrayList<String>()
 
-CustomKeywords.'utilities.commonUtility.closeBrowser'()
+int count = driver.findElements(By.cssSelector(".pagination li")).size()
 
-//WebUI.closeBrowser()
+int totalPages = count -2;
+
+int  i = 0;
+
+while (i < totalPages){
+
+	List<WebElement> ele = driver.findElements(By.xpath("//table//tr//td[1]"))
+	
+for(WebElement company : ele) {
+	
+	companiesName.add(company.getText())
+}
+if (i!=totalPages-1){
+
+	driver.findElement(By.cssSelector("#dtBasicExample_next")).click()
+}
+
+	i++
+}
+
+driver.close()
+
+

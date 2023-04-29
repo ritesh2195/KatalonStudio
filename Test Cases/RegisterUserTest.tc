@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>LoginTest</name>
+   <name>RegisterUserTest</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>857296a6-0fb0-41b8-859a-3588180cbdda</testCaseGuid>
+   <testCaseGuid>eb8f6935-e7f0-4cb4-8bbf-7e06a67e80c5</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>234e99d4-ef6e-4fe8-beaa-ee3c49e09aa1</variableId>
+      <variableId>5bcc42ee-5832-4b78-a94f-45d8b594d611</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'Your Account Has Been Created!'</defaultValue>
       <description></description>
-      <id>234e99d4-ef6e-4fe8-beaa-ee3c49e09aa1</id>
+      <id>5bcc42ee-5832-4b78-a94f-45d8b594d611</id>
       <masked>false</masked>
       <name>windowTitle</name>
    </variable>

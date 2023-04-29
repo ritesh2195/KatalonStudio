@@ -14,22 +14,23 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import org.openqa.selenium.WebDriver as WebDriver
+import internal.GlobalVariable
 import org.junit.Assert;
+import org.apache.commons.lang.RandomStringUtils
+import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'pageAction.HomePage.launchURL'(GlobalVariable.url)
 
-CustomKeywords.'pageAction.HomePage.navigateToLoginPage'()
+CustomKeywords.'pageAction.HomePage.navigateToRegisterUserPage'()
 
-CustomKeywords.'pageAction.LoginPage.doLogin'(GlobalVariable.email,GlobalVariable.password)
+CustomKeywords.'pageAction.RegisterPage.enterPersonalDetails'()
+
+CustomKeywords.'pageAction.RegisterPage.enterPassword'()
+
+CustomKeywords.'pageAction.RegisterPage.clickLogin'()
 
 String title = CustomKeywords.'utilities.commonUtility.getTitle'()
 
-//Assert.assertEquals(windowTitle, title)
+Assert.assertEquals(windowTitle, title)
 
 CustomKeywords.'utilities.commonUtility.closeBrowser'()
-
-//WebUI.closeBrowser()

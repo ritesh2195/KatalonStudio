@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_login</name>
+   <name>link_register</name>
    <tag></tag>
-   <elementGuidId>a8c435a1-3d0e-4acb-bd7b-3b4a4105b2b5</elementGuidId>
+   <elementGuidId>38b228b7-561a-466f-897c-cc6802d433d9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()='Login']</value>
+         <value>//*[text()='Register']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

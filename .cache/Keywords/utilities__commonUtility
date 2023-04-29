@@ -1,0 +1,21 @@
+{
+  "keywordFileContentHash": "6C28F1582B138DD5B0F8DD2D66C77A33",
+  "keywordClasses": [
+    {
+      "name": "utilities.commonUtility",
+      "keywordMethods": [
+        {
+          "name": "getTitle",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "closeBrowser",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
